@@ -11,8 +11,10 @@
 #' @importFrom units drop_units
 #' @importFrom dplyr left_join mutate
 #' @import osmdata
+#' @import sf
 #' @examples
-#'
+#' poi_list = list("amenity" = "school")
+#' poi_sf <- poi_density_area(districts_lk,poi_list,"ADM2_PCODE")
 poi_density_area <- function(area_sf,poi_list,area_id) {
 
   #stopifnot("area is not a sf object",)

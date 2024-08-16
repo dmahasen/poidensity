@@ -19,3 +19,7 @@ object of class sf
 \description{
 Compute POI density
 }
+\examples{
+poi_list = list("amenity" = "school")
+poi_sf <- poi_density_area(districts_lk,poi_list,"ADM2_PCODE")
+}

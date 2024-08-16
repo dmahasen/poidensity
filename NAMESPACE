@@ -2,6 +2,7 @@
 
 export(poi_density_area)
 import(osmdata)
+import(sf)
 importFrom(dplyr,left_join)
 importFrom(dplyr,mutate)
 importFrom(purrr,pluck)
