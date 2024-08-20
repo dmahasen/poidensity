@@ -39,7 +39,7 @@ poi_density_area <- function(area_sf,poi_list,area_id) {
 
   poi_count_sf$area <- st_area(poi_count_sf) %>% drop_units()
 
-  poi_density_sf <- poi_count_sf %>% mutate(poi_density = poi/area * 1000)
+  poi_density_sf <- poi_count_sf %>% mutate(poi_density = poi/area * 10^6)
 
   return(poi_density_sf)
 
